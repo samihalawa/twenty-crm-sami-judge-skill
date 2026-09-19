@@ -1,0 +1,4 @@
+interface:
+  display_name: "SAMI — Twenty CRM Judge"
+  short_description: "Judge the Twenty CRM board visually and return VERIFIED or REJECTED"
+  default_prompt: "Use $twenty-crm-sami-judge-skill to open crm.megawebs.com yourself, check the dashboard and the processed-email list against the expectation contract, and return SAMI VERIFIED or SAMI REJECTED with exact defects."
