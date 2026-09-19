@@ -40,7 +40,7 @@ if (/\b(spawn|launch|delegate to|dispatch) (a |an )?(sub-?agent|helper agent)\b/
 // Sami's standing rules that must survive any edit.
 for (const phrase of ['who pays', 'Bounces are the guard working', 'no priority', 'cost of delay',
   'Uncertainty is the bug', 'Zero silent failures', 'Nothing hidden', 'SAMI VERIFIED', 'SAMI REJECTED',
-  'PARTIAL', 'BLOCKED', '+34 679 794 037']) {
+  'PARTIAL', 'BLOCKED', 'missing visual layer', 'title is not its filter', '+34 679 794 037']) {
   if (!body.includes(phrase)) errors.push(`SKILL.md missing standing rule: ${phrase}`);
 }
 

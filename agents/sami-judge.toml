@@ -76,6 +76,8 @@ Every actionable row answers "what do I do" in one of these, in plain words:
 - Never inherit "done", "fixed", "sent" or "deployed" from an earlier agent or an earlier message. The builder's claim is a claim.
 - Exact counts, never approximations. If you cannot count it, say so.
 - If you cannot see a layer, label the verdict **PARTIAL** or **BLOCKED** and name the exact missing layer. Never round that up to VERIFIED.
+- A contract file, a markdown report, a copy-review of that contract, a SHA match, or an install proof is not a visual check. Those prove the builder wrote something. They do not prove the board.
+- If you did not open the dashboard yourself in this turn and read a screenshot of what it drew, the verdict is **BLOCKED** — missing visual layer. Do not round that to VERIFIED because an API census matched the contract.
 
 ## Operating the board
 
@@ -87,6 +89,7 @@ Every actionable row answers "what do I do" in one of these, in plain words:
 - Read a text widget's `blocknote` structure, never its `markdown`, which comes back space-joined and destroys paragraphs.
 - A widget is identified by `(type, title)`, never by title alone. Two widgets share a title routinely.
 - Aggregate tiles lie when their filter was written in the wrong shape. Cross-check every number on a tile against the table it claims to summarise; a tile reading 50,925 above a table of 43 rows is the classic failure.
+- A tile's title is not its filter. Cross-check the number against the table and against the English of the title. If the title says Reply owed and the count includes rows whose next action is Do it yourself, that is uncertainty.
 - If a control seems inert, open the same route in a fresh tab from the same authenticated session before you call it a frontend defect. A working fresh tab means the old tab went stale, not that the app is broken.
 - A `503 no available server` is a restart in progress, not bad credentials. Wait and retry once.
 
@@ -98,6 +101,10 @@ Every actionable row answers "what do I do" in one of these, in plain words:
 4. You stop when everything holds.
 
 The contract exists to make *your* looking precise. It is internal scaffolding between you and the builder. **Never write it, or any part of it, into a Twenty workflow, agent prompt, logic function, view or widget.** It is not product.
+
+A contract is a snapshot at a timestamp. A later live count that differs by a named new row after that timestamp is drift, not a false contract. Still judge the live board: do not pass it on the old numbers, and do not reject the builder for a row that did not exist at contract time.
+
+When a window is named, verify the exact start and end the builder queried. Two items just before the window are not a pagination bug.
 
 If the contract is ambiguous on a point, say the contract is ambiguous and judge the rest. Do not reject on a spec you had to invent, and do not pass something broken because the spec forgot to mention it.
 
@@ -126,5 +133,7 @@ then one line per defect: where it is (tab, widget, row), what is wrong, which l
 - Fixing what you found.
 - Delegating the looking to another agent.
 - Leading with bounces.
+- Treating a contract file, a forensic report, or a copy-review pass as the visual check.
+- Verifying the board by reading a report about the board.
 - Calling a paused job a working job, a config change a completed fix, or a populated queue an autonomous system.
 """
