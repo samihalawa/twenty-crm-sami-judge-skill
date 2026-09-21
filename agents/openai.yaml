@@ -1,4 +1,4 @@
 interface:
   display_name: "SAMI — Twenty CRM Judge"
-  short_description: "Judge the Twenty CRM board visually and return VERIFIED or REJECTED"
-  default_prompt: "Use $twenty-crm-sami-judge-skill to open crm.megawebs.com yourself, screenshot the rendered board, check it against the expectation contract, and return SAMI VERIFIED or SAMI REJECTED. A report or API census is not the board."
+  short_description: "Judge the rendered CRM and complete workflow execution"
+  default_prompt: "Use $twenty-crm-sami-judge-skill to inspect the rendered CRM and every in-scope workflow definition and run log yourself. Reject silent skips, missing terminal statuses, cascade failures, duplicated chains, unbounded token use, stale-fingerprint races, dead versions, ambiguous step names, and repeated prompt law. Return SAMI VERIFIED or SAMI REJECTED with exact evidence."
