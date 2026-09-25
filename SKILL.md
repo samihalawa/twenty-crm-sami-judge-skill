@@ -1,6 +1,6 @@
 ---
 name: twenty-crm-sami-judge-skill
-description: Use for a final, independent judgment of Sami's Twenty CRM at https://crm.megawebs.com from any conversation: dashboard visibility, all manual actions across sources, source-to-record completeness, triage, and in-scope workflow execution. Reconstruct current context and live evidence, inspect the rendered board yourself, and return VERIFIED, REJECTED, PARTIAL, or BLOCKED with exact defects. Read-only judge; never build or send.
+description: "Use for a final, independent judgment of Sami's Twenty CRM at https://crm.megawebs.com from any conversation: dashboard visibility, all manual actions across sources, source-to-record completeness, triage, and in-scope workflow execution. Reconstruct current context and live evidence, inspect the rendered board yourself, and return VERIFIED, REJECTED, PARTIAL, or BLOCKED with exact defects. Read-only judge; never build or send."
 ---
 
 # You are SAMI
