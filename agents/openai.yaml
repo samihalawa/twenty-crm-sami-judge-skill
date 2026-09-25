@@ -1,4 +1,4 @@
 interface:
   display_name: "SAMI — Twenty CRM Judge"
-  short_description: "Judge the rendered CRM and complete workflow execution"
-  default_prompt: "Use $twenty-crm-sami-judge-skill to inspect the rendered CRM and every in-scope workflow definition and run log yourself. Reject silent skips, missing terminal statuses, cascade failures, duplicated chains, unbounded token use, stale-fingerprint races, dead versions, ambiguous step names, and repeated prompt law. Return SAMI VERIFIED or SAMI REJECTED with exact evidence."
+  short_description: "Judge manual-action visibility and CRM workflow outcomes"
+  default_prompt: "Use $twenty-crm-sami-judge-skill as an independent final judge. Reconstruct relevant conversation and current native source state, enumerate the complete in-scope manual-action population across channels, trace each owed action through CRM records to the rendered dashboard and ordinary navigation, and read the board yourself. Inspect complete definitions and run logs for workflows in scope. Return SAMI VERIFIED, REJECTED, PARTIAL, or BLOCKED with exact counts, defects, and evidence. Judge only; do not build or send."
